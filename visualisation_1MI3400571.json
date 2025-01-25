@@ -1,0 +1,4936 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined"
+    ],
+    "baseIris": [
+      "http://www.bulgAIrian-cuisine.com",
+      "http://www.w3.org/2002/07/owl",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema"
+    ],
+    "prefixList": {
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "www": "http://www.bulgAIrian-cuisine.com#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "": "http://www.semanticweb.org/pvarna/ontologies/2025/0/bulgAIrian-cuisine/",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "iri": "http://www.bulgAIrian-cuisine.com",
+    "comments": {
+      "undefined": "Bulgarian cuisine ontology that describes various Bulgarian dishes based on their ingredients"
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.30",
+      "translation": [
+        478.66,
+        343.83
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "4"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "3",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "9",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:Class"
+    },
+    {
+      "id": "25",
+      "type": "owl:Class"
+    },
+    {
+      "id": "27",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "44",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "29",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "45",
+      "type": "rdfs:Literal"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "63",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "77",
+      "type": "owl:Class"
+    },
+    {
+      "id": "79",
+      "type": "owl:Class"
+    },
+    {
+      "id": "80",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "81",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "56",
+      "type": "owl:Class"
+    },
+    {
+      "id": "75",
+      "type": "owl:Class"
+    },
+    {
+      "id": "74",
+      "type": "owl:Class"
+    },
+    {
+      "id": "82",
+      "type": "owl:Class"
+    },
+    {
+      "id": "10",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "64",
+      "type": "owl:Class"
+    },
+    {
+      "id": "101",
+      "type": "owl:Class"
+    },
+    {
+      "id": "66",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    },
+    {
+      "id": "68",
+      "type": "owl:Class"
+    },
+    {
+      "id": "71",
+      "type": "owl:Class"
+    },
+    {
+      "id": "120",
+      "type": "owl:Class"
+    },
+    {
+      "id": "121",
+      "type": "owl:Class"
+    },
+    {
+      "id": "14",
+      "type": "owl:Class"
+    },
+    {
+      "id": "67",
+      "type": "owl:Class"
+    },
+    {
+      "id": "62",
+      "type": "owl:Class"
+    },
+    {
+      "id": "69",
+      "type": "owl:Class"
+    },
+    {
+      "id": "17",
+      "type": "owl:Class"
+    },
+    {
+      "id": "78",
+      "type": "owl:Class"
+    },
+    {
+      "id": "76",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:Class"
+    },
+    {
+      "id": "72",
+      "type": "owl:Class"
+    },
+    {
+      "id": "139",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "140",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "48",
+      "type": "owl:Class"
+    },
+    {
+      "id": "144",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "42",
+      "type": "owl:Class"
+    },
+    {
+      "id": "150",
+      "type": "owl:intersectionOf"
+    },
+    {
+      "id": "96",
+      "type": "owl:Class"
+    },
+    {
+      "id": "15",
+      "type": "owl:Class"
+    },
+    {
+      "id": "20",
+      "type": "owl:Class"
+    },
+    {
+      "id": "26",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "93",
+      "type": "owl:Class"
+    },
+    {
+      "id": "38",
+      "type": "owl:Class"
+    },
+    {
+      "id": "108",
+      "type": "owl:Class"
+    },
+    {
+      "id": "73",
+      "type": "owl:Class"
+    },
+    {
+      "id": "90",
+      "type": "owl:Class"
+    },
+    {
+      "id": "183",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "83",
+      "type": "owl:Class"
+    },
+    {
+      "id": "40",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "57",
+      "type": "owl:Class"
+    },
+    {
+      "id": "6",
+      "type": "owl:Class"
+    },
+    {
+      "id": "47",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "70",
+      "type": "owl:Class"
+    },
+    {
+      "id": "65",
+      "type": "owl:Class"
+    },
+    {
+      "id": "133",
+      "type": "owl:Class"
+    },
+    {
+      "id": "52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "87",
+      "type": "owl:Class"
+    },
+    {
+      "id": "118",
+      "type": "owl:Class"
+    },
+    {
+      "id": "43",
+      "type": "owl:Class"
+    },
+    {
+      "id": "98",
+      "type": "owl:Class"
+    },
+    {
+      "id": "134",
+      "type": "owl:Class"
+    },
+    {
+      "id": "54",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "3",
+      "iri": "http://www.bulgAIrian-cuisine.com#LeanDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "LeanDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://www.bulgAIrian-cuisine.com#Crunchy",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Crunchy"
+      },
+      "pos": [
+        296.46,
+        440.67
+      ]
+    },
+    {
+      "id": "23",
+      "iri": "http://www.bulgAIrian-cuisine.com#Tarator",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Tarator"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Tarator",
+          "labels": {
+            "IRI-based": "Example-Tarator"
+          }
+        }
+      ],
+      "pos": [
+        795.38,
+        424.97
+      ]
+    },
+    {
+      "id": "25",
+      "iri": "http://www.bulgAIrian-cuisine.com#VerySpicy",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "VerySpicy"
+      },
+      "pos": [
+        743.92,
+        -1191.8
+      ]
+    },
+    {
+      "id": "27",
+      "iri": "http://www.bulgAIrian-cuisine.com#MildSpicy",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "MildSpicy"
+      },
+      "pos": [
+        983.65,
+        -546.58
+      ]
+    },
+    {
+      "id": "36",
+      "iri": "http://www.bulgAIrian-cuisine.com#SpicyDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "SpicyDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.bulgAIrian-cuisine.com#SweetDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "SweetDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "29",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      }
+    },
+    {
+      "id": "45",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "label": "Literal",
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "12",
+      "iri": "http://www.bulgAIrian-cuisine.com#PepperIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "PepperIngredient"
+      },
+      "pos": [
+        1400.29,
+        1061.31
+      ]
+    },
+    {
+      "id": "2",
+      "iri": "http://www.bulgAIrian-cuisine.com#VegetableIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "VegetableIngredient"
+      },
+      "pos": [
+        1117.94,
+        686.85
+      ]
+    },
+    {
+      "id": "8",
+      "iri": "http://www.bulgAIrian-cuisine.com#GarlicIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "GarlicIngredient"
+      }
+    },
+    {
+      "id": "63",
+      "iri": "http://www.bulgAIrian-cuisine.com#MildSweet",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "MildSweet"
+      },
+      "pos": [
+        -602.62,
+        -847.84
+      ]
+    },
+    {
+      "id": "22",
+      "iri": "http://www.bulgAIrian-cuisine.com#YogurtIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "YogurtIngredient"
+      }
+    },
+    {
+      "id": "24",
+      "iri": "http://www.bulgAIrian-cuisine.com#NamedDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "NamedDish"
+      },
+      "pos": [
+        612.27,
+        763.52
+      ]
+    },
+    {
+      "id": "77",
+      "iri": "http://www.bulgAIrian-cuisine.com#ChickenIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ChickenIngredient"
+      }
+    },
+    {
+      "id": "79",
+      "iri": "http://www.bulgAIrian-cuisine.com#LambIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "LambIngredient"
+      }
+    },
+    {
+      "id": "80",
+      "iri": "http://www.bulgAIrian-cuisine.com#RegionalDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "RegionalDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "81",
+      "iri": "http://www.bulgAIrian-cuisine.com#ChocolateIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ChocolateIngredient"
+      }
+    },
+    {
+      "id": "1",
+      "iri": "http://www.bulgAIrian-cuisine.com#CarrotIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "CarrotIngredient"
+      }
+    },
+    {
+      "id": "56",
+      "iri": "http://www.bulgAIrian-cuisine.com#CucumberIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "CucumberIngredient"
+      }
+    },
+    {
+      "id": "75",
+      "iri": "http://www.bulgAIrian-cuisine.com#Gyuvech",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Gyuvech"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Gyuvech",
+          "labels": {
+            "IRI-based": "Example-Gyuvech"
+          }
+        }
+      ],
+      "pos": [
+        1383.3,
+        606.77
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.bulgAIrian-cuisine.com#Patatnik",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Patatnik"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Patatnik",
+          "labels": {
+            "IRI-based": "Example-Patatnik"
+          }
+        }
+      ],
+      "pos": [
+        533.31,
+        294.32
+      ]
+    },
+    {
+      "id": "82",
+      "iri": "http://www.bulgAIrian-cuisine.com#DishIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "DishIngredient"
+      },
+      "pos": [
+        188.25,
+        -288.06
+      ]
+    },
+    {
+      "id": "10",
+      "iri": "http://www.bulgAIrian-cuisine.com#Texture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Texture"
+      },
+      "attributes": [
+        "union"
+      ],
+      "pos": [
+        579.07,
+        -111.66
+      ]
+    },
+    {
+      "id": "64",
+      "iri": "http://www.bulgAIrian-cuisine.com#ShopskaSalad",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ShopskaSalad"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-ShopskaSalad",
+          "labels": {
+            "IRI-based": "Example-ShopskaSalad"
+          }
+        }
+      ],
+      "pos": [
+        888.37,
+        916.76
+      ]
+    },
+    {
+      "id": "101",
+      "iri": "http://www.bulgAIrian-cuisine.com#VerySweet",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "VerySweet"
+      },
+      "pos": [
+        -701.21,
+        -538.53
+      ]
+    },
+    {
+      "id": "66",
+      "iri": "http://www.bulgAIrian-cuisine.com#StuffedPeppersWithBeans",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "StuffedPeppersWithBeans"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-StuffedPeppersWithBeans",
+          "labels": {
+            "IRI-based": "Example-StuffedPeppersWithBeans"
+          }
+        }
+      ],
+      "pos": [
+        1077.71,
+        807.18
+      ]
+    },
+    {
+      "id": "4",
+      "iri": "http://www.bulgAIrian-cuisine.com#Dish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Dish"
+      },
+      "pos": [
+        219.31,
+        61.05
+      ]
+    },
+    {
+      "id": "68",
+      "iri": "http://www.bulgAIrian-cuisine.com#ChocolateBanitsa",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ChocolateBanitsa"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-ChocolateBanitsa",
+          "labels": {
+            "IRI-based": "Example-ChocolateBanitsa"
+          }
+        }
+      ],
+      "pos": [
+        62.35,
+        776.18
+      ]
+    },
+    {
+      "id": "71",
+      "iri": "http://www.bulgAIrian-cuisine.com#BobChorba",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "BobChorba"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-BobChorba",
+          "labels": {
+            "IRI-based": "Example-BobChorba"
+          }
+        }
+      ],
+      "pos": [
+        1136.06,
+        614.7
+      ]
+    },
+    {
+      "id": "120",
+      "iri": "http://www.bulgAIrian-cuisine.com#CookingMethod",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "CookingMethod"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Baking",
+          "labels": {
+            "IRI-based": "Baking"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Grilling",
+          "labels": {
+            "IRI-based": "Grilling"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#NoCooking",
+          "labels": {
+            "IRI-based": "NoCooking"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Boiling",
+          "labels": {
+            "IRI-based": "Boiling"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Frying",
+          "labels": {
+            "IRI-based": "Frying"
+          }
+        }
+      ]
+    },
+    {
+      "id": "121",
+      "iri": "http://www.bulgAIrian-cuisine.com#PorkIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "PorkIngredient"
+      },
+      "pos": [
+        1270.67,
+        113.4
+      ]
+    },
+    {
+      "id": "14",
+      "iri": "http://www.bulgAIrian-cuisine.com#YellowCheeseIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "YellowCheeseIngredient"
+      }
+    },
+    {
+      "id": "67",
+      "iri": "http://www.bulgAIrian-cuisine.com#Tikvenik",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Tikvenik"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Tikvenik",
+          "labels": {
+            "IRI-based": "Example-Tikvenik"
+          }
+        }
+      ],
+      "pos": [
+        -25.48,
+        794.41
+      ]
+    },
+    {
+      "id": "62",
+      "iri": "http://www.bulgAIrian-cuisine.com#EggIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "EggIngredient"
+      }
+    },
+    {
+      "id": "69",
+      "iri": "http://www.bulgAIrian-cuisine.com#Lyutenitsa",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Lyutenitsa"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Lyutenitsa",
+          "labels": {
+            "IRI-based": "Example-Lyutenitsa"
+          }
+        }
+      ],
+      "pos": [
+        1004.34,
+        929.08
+      ]
+    },
+    {
+      "id": "17",
+      "iri": "http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "WhiteCheeseIngredient"
+      }
+    },
+    {
+      "id": "78",
+      "iri": "http://www.bulgAIrian-cuisine.com#MeatIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "MeatIngredient"
+      },
+      "pos": [
+        790.24,
+        -305.46
+      ]
+    },
+    {
+      "id": "76",
+      "iri": "http://www.bulgAIrian-cuisine.com#FishChorba",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "FishChorba"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-FishChorba",
+          "labels": {
+            "IRI-based": "Example-FishChorba"
+          }
+        }
+      ],
+      "pos": [
+        718.49,
+        325.23
+      ]
+    },
+    {
+      "id": "19",
+      "iri": "http://www.bulgAIrian-cuisine.com#ButterIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ButterIngredient"
+      },
+      "pos": [
+        -98.85,
+        417.34
+      ]
+    },
+    {
+      "id": "72",
+      "iri": "http://www.bulgAIrian-cuisine.com#TeleshkoKebapche",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "TeleshkoKebapche"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-TeleshkoKebapche",
+          "labels": {
+            "IRI-based": "Example-TeleshkoKebapche"
+          }
+        }
+      ],
+      "pos": [
+        643.02,
+        386.11
+      ]
+    },
+    {
+      "id": "139",
+      "iri": "http://www.bulgAIrian-cuisine.com#NoCookableDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "NoCookableDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "140",
+      "iri": "http://www.w3.org/2001/XMLSchema#boolean",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "boolean"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "48",
+      "iri": "http://www.bulgAIrian-cuisine.com#ValuePartition",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "ValuePartition"
+      },
+      "pos": [
+        236.79,
+        -594.37
+      ]
+    },
+    {
+      "id": "144",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "42",
+      "iri": "http://www.bulgAIrian-cuisine.com#Banitsa",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Banitsa"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Banitsa",
+          "labels": {
+            "IRI-based": "Example-Banitsa"
+          }
+        }
+      ],
+      "pos": [
+        38.98,
+        832.44
+      ]
+    },
+    {
+      "id": "150",
+      "iri": "http://www.bulgAIrian-cuisine.com#HighCalorieDish",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "HighCalorieDish"
+      },
+      "attributes": [
+        "intersection"
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "http://www.bulgAIrian-cuisine.com#BeanIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "BeanIngredient"
+      }
+    },
+    {
+      "id": "15",
+      "iri": "http://www.bulgAIrian-cuisine.com#CheeseIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "CheeseIngredient"
+      }
+    },
+    {
+      "id": "20",
+      "iri": "http://www.bulgAIrian-cuisine.com#DairyIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "DairyIngredient"
+      },
+      "pos": [
+        -225.69,
+        -13.57
+      ]
+    },
+    {
+      "id": "26",
+      "iri": "http://www.bulgAIrian-cuisine.com#Spiciness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Spiciness"
+      },
+      "attributes": [
+        "union"
+      ],
+      "pos": [
+        620.9,
+        -817.27
+      ]
+    },
+    {
+      "id": "93",
+      "iri": "http://www.bulgAIrian-cuisine.com#FruitIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "FruitIngredient"
+      }
+    },
+    {
+      "id": "38",
+      "iri": "http://www.bulgAIrian-cuisine.com#PotatoIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "PotatoIngredient"
+      }
+    },
+    {
+      "id": "108",
+      "iri": "http://www.bulgAIrian-cuisine.com#DomainThing",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "DomainThing"
+      },
+      "pos": [
+        -73.89,
+        -956.71
+      ]
+    },
+    {
+      "id": "73",
+      "iri": "http://www.bulgAIrian-cuisine.com#SvinskoKufte",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "SvinskoKufte"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-SvinskoKufte",
+          "labels": {
+            "IRI-based": "Example-SvinskoKufte"
+          }
+        }
+      ],
+      "pos": [
+        710.42,
+        243.09
+      ]
+    },
+    {
+      "id": "90",
+      "iri": "http://www.bulgAIrian-cuisine.com#Soft",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Soft"
+      },
+      "pos": [
+        1058.9,
+        222.76
+      ]
+    },
+    {
+      "id": "183",
+      "iri": "http://www.w3.org/2001/XMLSchema#integer",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "integer"
+      },
+      "attributes": [
+        "datatype"
+      ]
+    },
+    {
+      "id": "83",
+      "iri": "http://www.bulgAIrian-cuisine.com#Food",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Food"
+      },
+      "pos": [
+        22.52,
+        -555.86
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.bulgAIrian-cuisine.com#TomatoIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "TomatoIngredient"
+      },
+      "pos": [
+        1321.72,
+        1087.1
+      ]
+    },
+    {
+      "id": "84",
+      "iri": "http://www.bulgAIrian-cuisine.com#Region",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Region"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#RhodopeRegion",
+          "labels": {
+            "IRI-based": "RhodopeRegion"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#PirinRegion",
+          "labels": {
+            "IRI-based": "PirinRegion"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#DobrudjaRegion",
+          "labels": {
+            "IRI-based": "DobrudjaRegion"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#BlackSeaCoastRegion",
+          "labels": {
+            "IRI-based": "BlackSeaCoastRegion"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#ThracianRegion",
+          "labels": {
+            "IRI-based": "ThracianRegion"
+          }
+        },
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#BalkanRegion",
+          "labels": {
+            "IRI-based": "BalkanRegion"
+          }
+        }
+      ]
+    },
+    {
+      "id": "57",
+      "iri": "http://www.bulgAIrian-cuisine.com#LeanIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "LeanIngredient"
+      },
+      "pos": [
+        615.51,
+        118.96
+      ]
+    },
+    {
+      "id": "6",
+      "iri": "http://www.bulgAIrian-cuisine.com#SauerkrautIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "SauerkrautIngredient"
+      }
+    },
+    {
+      "id": "47",
+      "iri": "http://www.bulgAIrian-cuisine.com#Sweetness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Sweetness"
+      },
+      "attributes": [
+        "union"
+      ],
+      "pos": [
+        -310.21,
+        -601.17
+      ]
+    },
+    {
+      "id": "70",
+      "iri": "http://www.bulgAIrian-cuisine.com#Kapama",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Kapama"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Kapama",
+          "labels": {
+            "IRI-based": "Example-Kapama"
+          }
+        }
+      ],
+      "pos": [
+        1220.12,
+        576.9
+      ]
+    },
+    {
+      "id": "65",
+      "iri": "http://www.bulgAIrian-cuisine.com#Kavarma",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Kavarma"
+      },
+      "individuals": [
+        {
+          "iri": "http://www.bulgAIrian-cuisine.com#Example-Kavarma",
+          "labels": {
+            "IRI-based": "Example-Kavarma"
+          }
+        }
+      ],
+      "pos": [
+        1317.66,
+        636.5
+      ]
+    },
+    {
+      "id": "133",
+      "iri": "http://www.bulgAIrian-cuisine.com#BeefIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "BeefIngredient"
+      }
+    },
+    {
+      "id": "52",
+      "iri": "http://www.bulgAIrian-cuisine.com#EggplantIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "EggplantIngredient"
+      }
+    },
+    {
+      "id": "87",
+      "iri": "http://www.bulgAIrian-cuisine.com#Liquid",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "Liquid"
+      },
+      "pos": [
+        963.84,
+        -22.07
+      ]
+    },
+    {
+      "id": "118",
+      "iri": "http://www.bulgAIrian-cuisine.com#PumpkinIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "PumpkinIngredient"
+      }
+    },
+    {
+      "id": "43",
+      "iri": "http://www.bulgAIrian-cuisine.com#FiloDoughIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "FiloDoughIngredient"
+      },
+      "pos": [
+        -152.45,
+        355.52
+      ]
+    },
+    {
+      "id": "98",
+      "iri": "http://www.bulgAIrian-cuisine.com#RiceIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "RiceIngredient"
+      }
+    },
+    {
+      "id": "134",
+      "iri": "http://www.bulgAIrian-cuisine.com#FishIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "FishIngredient"
+      }
+    },
+    {
+      "id": "54",
+      "iri": "http://www.bulgAIrian-cuisine.com#OnionIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "OnionIngredient"
+      },
+      "pos": [
+        1131.15,
+        205.97
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "0",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "5",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "7",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "11",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "13",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "16",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "18",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "21",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "28",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "37",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "39",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "41",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "46",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "49",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "50",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "51",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "53",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "55",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "59",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "60",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "61",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "85",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "86",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "88",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "89",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "91",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "92",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "94",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "95",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "97",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "99",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "100",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "102",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "103",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "30",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "104",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "105",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "106",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "107",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "109",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "110",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "111",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "112",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "113",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "114",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "115",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "116",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "117",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "119",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "122",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "123",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "124",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "125",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "126",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "127",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "128",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "129",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "130",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "131",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "132",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "135",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "136",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "137",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "138",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "141",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "142",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "143",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "145",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "146",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "147",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "148",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "149",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "151",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "152",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "153",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "154",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "155",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "156",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "157",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "158",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "159",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "160",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "161",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "162",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "163",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "164",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "165",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "166",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "167",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "168",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "169",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "170",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "171",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "172",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "173",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "174",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "175",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "176",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "177",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "178",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "179",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "180",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "181",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "182",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "184",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "185",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "186",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "187",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "188",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "189",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "190",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "191",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "192",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "32",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "193",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "33",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "194",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "195",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "196",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "197",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "198",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "35",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "199",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "200",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "201",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "202",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "203",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "204",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "205",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "206",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "207",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "208",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "209",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "210",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "211",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "212",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "213",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "214",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "215",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "216",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "217",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "218",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "219",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "220",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "221",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "222",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "223",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "224",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "225",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "31",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "226",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "227",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "228",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "229",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "230",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "231",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "232",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "233",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "234",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "235",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "236",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "237",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "238",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "239",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "240",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "241",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "242",
+      "type": "owl:someValuesFrom"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-3-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-36-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-44-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-80-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-10-87-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-10-9-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-10-90-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-139-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-150-4-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-26-27-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-26-25-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-47-63-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-47-101-1",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "0",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "1",
+      "range": "2"
+    },
+    {
+      "id": "5",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "6",
+      "range": "2"
+    },
+    {
+      "id": "7",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "8",
+      "range": "2"
+    },
+    {
+      "id": "11",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "12",
+      "range": "2",
+      "pos": [
+        1259.12,
+        874.08
+      ]
+    },
+    {
+      "id": "13",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "14",
+      "range": "15"
+    },
+    {
+      "id": "16",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "17",
+      "range": "15"
+    },
+    {
+      "id": "18",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "19",
+      "range": "20",
+      "pos": [
+        -162.27,
+        201.88
+      ]
+    },
+    {
+      "id": "21",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "22",
+      "range": "20"
+    },
+    {
+      "id": "28",
+      "iri": "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "label": {
+        "IRI-based": "topObjectProperty"
+      },
+      "attributes": [
+        "external",
+        "object"
+      ],
+      "domain": "29",
+      "range": "29",
+      "subproperty": [
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "id": "37",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "38",
+      "range": "2"
+    },
+    {
+      "id": "39",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "40",
+      "range": "2",
+      "pos": [
+        1219.83,
+        886.98
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "43",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -58.7,
+        589.09
+      ]
+    },
+    {
+      "id": "46",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "47",
+      "range": "48",
+      "pos": [
+        -36.71,
+        -597.77
+      ]
+    },
+    {
+      "id": "49",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "10",
+      "range": "48",
+      "pos": [
+        407.93,
+        -353.01
+      ]
+    },
+    {
+      "id": "50",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "48",
+      "pos": [
+        428.84,
+        -705.82
+      ]
+    },
+    {
+      "id": "51",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "52",
+      "range": "2"
+    },
+    {
+      "id": "53",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "54",
+      "range": "2",
+      "pos": [
+        1124.55,
+        446.41
+      ]
+    },
+    {
+      "id": "55",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "56",
+      "range": "2"
+    },
+    {
+      "id": "58",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "17",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "59",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "19",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -31.6,
+        619.89
+      ]
+    },
+    {
+      "id": "60",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        170.61,
+        632.15
+      ]
+    },
+    {
+      "id": "61",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "62",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "34",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasRegion",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasRegion"
+      },
+      "attributes": [
+        "functional",
+        "object"
+      ],
+      "domain": "83",
+      "range": "84",
+      "superproperty": [
+        "28"
+      ]
+    },
+    {
+      "id": "85",
+      "iri": "http://www.w3.org/2002/07/owl#topDataProperty",
+      "baseIri": "http://www.w3.org/2002/07/owl",
+      "label": {
+        "IRI-based": "topDataProperty"
+      },
+      "attributes": [
+        "datatype",
+        "external"
+      ],
+      "domain": "29",
+      "range": "45"
+    },
+    {
+      "id": "86",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "87",
+      "range": "10",
+      "pos": [
+        783.91,
+        -157.89
+      ]
+    },
+    {
+      "id": "88",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "10",
+      "pos": [
+        374.39,
+        135.06
+      ]
+    },
+    {
+      "id": "89",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "90",
+      "range": "10",
+      "pos": [
+        854.39,
+        -21.41
+      ]
+    },
+    {
+      "id": "91",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "24",
+      "range": "4",
+      "pos": [
+        415.79,
+        412.28
+      ]
+    },
+    {
+      "id": "92",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "93",
+      "range": "57"
+    },
+    {
+      "id": "94",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "2",
+      "range": "57",
+      "pos": [
+        866.73,
+        402.9
+      ]
+    },
+    {
+      "id": "95",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "96",
+      "range": "57"
+    },
+    {
+      "id": "97",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "98",
+      "range": "57"
+    },
+    {
+      "id": "99",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "63",
+      "range": "47",
+      "pos": [
+        -483.48,
+        -709.23
+      ]
+    },
+    {
+      "id": "100",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "101",
+      "range": "47",
+      "pos": [
+        -511.03,
+        -533.82
+      ]
+    },
+    {
+      "id": "102",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "81",
+      "range": "82"
+    },
+    {
+      "id": "103",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "43",
+      "range": "82",
+      "pos": [
+        17.9,
+        33.73
+      ]
+    },
+    {
+      "id": "30",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object"
+      ],
+      "domain": "4",
+      "range": "10",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        399.19,
+        -25.3
+      ]
+    },
+    {
+      "id": "104",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "57",
+      "range": "82",
+      "pos": [
+        401.88,
+        -84.55
+      ]
+    },
+    {
+      "id": "105",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "62",
+      "range": "82"
+    },
+    {
+      "id": "106",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "78",
+      "range": "82",
+      "pos": [
+        489.25,
+        -296.76
+      ]
+    },
+    {
+      "id": "107",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "83",
+      "range": "108",
+      "pos": [
+        -25.69,
+        -756.29
+      ]
+    },
+    {
+      "id": "109",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "84",
+      "range": "108"
+    },
+    {
+      "id": "110",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "83",
+      "pos": [
+        120.91,
+        -247.41
+      ]
+    },
+    {
+      "id": "111",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "82",
+      "range": "83",
+      "pos": [
+        105.38,
+        -421.96
+      ]
+    },
+    {
+      "id": "112",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "20",
+      "range": "82",
+      "pos": [
+        -18.72,
+        -150.82
+      ]
+    },
+    {
+      "id": "113",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "75",
+      "range": "24",
+      "pos": [
+        992.62,
+        686.19
+      ]
+    },
+    {
+      "id": "114",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "76",
+      "range": "24",
+      "pos": [
+        664.14,
+        549.5
+      ]
+    },
+    {
+      "id": "115",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "27",
+      "range": "26",
+      "pos": [
+        851.18,
+        -766.86
+      ]
+    },
+    {
+      "id": "116",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "25",
+      "range": "26",
+      "pos": [
+        715.71,
+        -1008.15
+      ]
+    },
+    {
+      "id": "117",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "118",
+      "range": "93"
+    },
+    {
+      "id": "119",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "120",
+      "range": "108"
+    },
+    {
+      "id": "122",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "71",
+      "range": "24",
+      "pos": [
+        869.09,
+        690.55
+      ]
+    },
+    {
+      "id": "123",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "72",
+      "range": "24",
+      "pos": [
+        627.22,
+        580.07
+      ]
+    },
+    {
+      "id": "124",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "73",
+      "range": "24",
+      "pos": [
+        660.37,
+        508.49
+      ]
+    },
+    {
+      "id": "125",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "74",
+      "range": "24",
+      "pos": [
+        573.67,
+        534.12
+      ]
+    },
+    {
+      "id": "126",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "24",
+      "pos": [
+        839.74,
+        784.86
+      ]
+    },
+    {
+      "id": "127",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "67",
+      "range": "24",
+      "pos": [
+        298.66,
+        778.71
+      ]
+    },
+    {
+      "id": "128",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "24",
+      "pos": [
+        701.32,
+        598.88
+      ]
+    },
+    {
+      "id": "129",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "42",
+      "range": "24",
+      "pos": [
+        330.86,
+        797.35
+      ]
+    },
+    {
+      "id": "130",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "68",
+      "range": "24",
+      "pos": [
+        342.58,
+        769.73
+      ]
+    },
+    {
+      "id": "131",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "69",
+      "range": "24",
+      "pos": [
+        803.45,
+        844.25
+      ]
+    },
+    {
+      "id": "132",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "70",
+      "range": "24",
+      "pos": [
+        911.15,
+        671.76
+      ]
+    },
+    {
+      "id": "135",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "15",
+      "range": "20"
+    },
+    {
+      "id": "136",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "24",
+      "pos": [
+        745.71,
+        837.58
+      ]
+    },
+    {
+      "id": "137",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "24",
+      "pos": [
+        959.77,
+        700.95
+      ]
+    },
+    {
+      "id": "138",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "4",
+      "range": "82"
+    },
+    {
+      "id": "141",
+      "iri": "http://www.bulgAIrian-cuisine.com#isTraditional",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "isTraditional"
+      },
+      "attributes": [
+        "functional",
+        "datatype",
+        "someValues"
+      ],
+      "domain": "4",
+      "range": "140"
+    },
+    {
+      "id": "142",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSweetness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSweetness"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "118",
+      "range": "63",
+      "superproperty": [
+        "28"
+      ]
+    },
+    {
+      "id": "143",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "66",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1068.14,
+        509.7
+      ]
+    },
+    {
+      "id": "145",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasCaloricContentValue",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasCaloricContentValue"
+      },
+      "attributes": [
+        "functional",
+        "datatype",
+        "someValues"
+      ],
+      "domain": "4",
+      "range": "144"
+    },
+    {
+      "id": "146",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "23"
+    },
+    {
+      "id": "147",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "67"
+    },
+    {
+      "id": "148",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "23",
+      "range": "67"
+    },
+    {
+      "id": "149",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "67"
+    },
+    {
+      "id": "151",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "64"
+    },
+    {
+      "id": "152",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "67"
+    },
+    {
+      "id": "153",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "23"
+    },
+    {
+      "id": "154",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "65"
+    },
+    {
+      "id": "155",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "42",
+      "range": "67"
+    },
+    {
+      "id": "156",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "23"
+    },
+    {
+      "id": "157",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "65"
+    },
+    {
+      "id": "158",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "64",
+      "range": "42"
+    },
+    {
+      "id": "159",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "42",
+      "range": "23"
+    },
+    {
+      "id": "160",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "66",
+      "range": "42"
+    },
+    {
+      "id": "161",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "73",
+      "range": "121",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        995.68,
+        177.06
+      ]
+    },
+    {
+      "id": "162",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "73",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        498.68,
+        344.15
+      ]
+    },
+    {
+      "id": "163",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "73",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        926.03,
+        224.06
+      ]
+    },
+    {
+      "id": "164",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "71",
+      "range": "96",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "165",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "71",
+      "range": "1",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "166",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSpiciness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSpiciness"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "54",
+      "range": "27",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1057.4,
+        -170.3
+      ]
+    },
+    {
+      "id": "167",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSweetness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSweetness"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "81",
+      "range": "101",
+      "superproperty": [
+        "28"
+      ]
+    },
+    {
+      "id": "168",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "71",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1133.54,
+        405.06
+      ]
+    },
+    {
+      "id": "169",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "67",
+      "range": "19",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -63.17,
+        600.7
+      ]
+    },
+    {
+      "id": "170",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "71",
+      "range": "40",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1230.82,
+        855.81
+      ]
+    },
+    {
+      "id": "171",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "71",
+      "range": "87",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1048.57,
+        291.23
+      ]
+    },
+    {
+      "id": "172",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "67",
+      "range": "43",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -90.43,
+        569.9
+      ]
+    },
+    {
+      "id": "173",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "67",
+      "range": "118",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "174",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasCookingMethod",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasCookingMethod"
+      },
+      "attributes": [
+        "functional",
+        "object"
+      ],
+      "domain": "4",
+      "range": "120"
+    },
+    {
+      "id": "175",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "67",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        139.04,
+        613.64
+      ]
+    },
+    {
+      "id": "176",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1185.48,
+        425.16
+      ]
+    },
+    {
+      "id": "177",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "14",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "178",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "79",
+      "range": "78"
+    },
+    {
+      "id": "179",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "12",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1359.98,
+        854.08
+      ]
+    },
+    {
+      "id": "180",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "121",
+      "range": "78",
+      "pos": [
+        1030.45,
+        -96.03
+      ]
+    },
+    {
+      "id": "181",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1222.31,
+        416.4
+      ]
+    },
+    {
+      "id": "182",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "133",
+      "range": "78"
+    },
+    {
+      "id": "184",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "77",
+      "range": "78"
+    },
+    {
+      "id": "185",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasPreparationTime",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasPreparationTime"
+      },
+      "attributes": [
+        "functional",
+        "datatype",
+        "someValues"
+      ],
+      "domain": "4",
+      "range": "183"
+    },
+    {
+      "id": "186",
+      "label": "Subclass of",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "134",
+      "range": "78"
+    },
+    {
+      "id": "187",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "121",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1293.69,
+        369.7
+      ]
+    },
+    {
+      "id": "188",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "65",
+      "range": "40",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1319.74,
+        867.08
+      ]
+    },
+    {
+      "id": "189",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "72",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        892.03,
+        294.21
+      ]
+    },
+    {
+      "id": "190",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "27",
+      "range": "25"
+    },
+    {
+      "id": "191",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "72",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        464.53,
+        414.21
+      ]
+    },
+    {
+      "id": "192",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "72",
+      "range": "133",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "32",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSweetness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSweetness"
+      },
+      "attributes": [
+        "functional",
+        "object"
+      ],
+      "domain": "82",
+      "range": "47",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        -60.98,
+        -444.61
+      ]
+    },
+    {
+      "id": "193",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "68",
+      "range": "43",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -47.45,
+        561.16
+      ]
+    },
+    {
+      "id": "33",
+      "iri": "http://www.bulgAIrian-cuisine.com#isIngredientOf",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "isIngredientOf"
+      },
+      "attributes": [
+        "transitive",
+        "object"
+      ],
+      "domain": "12",
+      "range": "75",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "242"
+    },
+    {
+      "id": "194",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "68",
+      "range": "81",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "195",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "68",
+      "range": "19",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        -20.41,
+        591.95
+      ]
+    },
+    {
+      "id": "196",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "17",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "197",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "12",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1149.4,
+        990.47
+      ]
+    },
+    {
+      "id": "198",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "68",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        182.42,
+        604.1
+      ]
+    },
+    {
+      "id": "35",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object"
+      ],
+      "domain": "83",
+      "range": "83",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        22.26,
+        -725.19
+      ]
+    },
+    {
+      "id": "199",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1011.46,
+        556.37
+      ]
+    },
+    {
+      "id": "200",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "9",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        588.31,
+        675.41
+      ]
+    },
+    {
+      "id": "201",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "76",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        929.88,
+        264.13
+      ]
+    },
+    {
+      "id": "202",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "40",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1109.95,
+        1003.86
+      ]
+    },
+    {
+      "id": "203",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "64",
+      "range": "56",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "204",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "76",
+      "range": "1",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "205",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "76",
+      "range": "134",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "206",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "76",
+      "range": "87",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        844.21,
+        147.27
+      ]
+    },
+    {
+      "id": "207",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "74",
+      "range": "19",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        212.05,
+        356.84
+      ]
+    },
+    {
+      "id": "208",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "74",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        837.44,
+        249.37
+      ]
+    },
+    {
+      "id": "209",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "74",
+      "range": "38",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "210",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "74",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        801.33,
+        257.83
+      ]
+    },
+    {
+      "id": "211",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "70",
+      "range": "6",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "212",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "70",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1137.32,
+        395.03
+      ]
+    },
+    {
+      "id": "213",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "42",
+      "range": "22",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "214",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "70",
+      "range": "77",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "215",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSpiciness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSpiciness"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "8",
+      "range": "25",
+      "superproperty": [
+        "28"
+      ]
+    },
+    {
+      "id": "216",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "70",
+      "range": "98",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "217",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "70",
+      "range": "121",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1245.96,
+        339.91
+      ]
+    },
+    {
+      "id": "218",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "87",
+      "range": "90"
+    },
+    {
+      "id": "219",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "63",
+      "range": "101"
+    },
+    {
+      "id": "220",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "47"
+    },
+    {
+      "id": "221",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "26",
+      "range": "10"
+    },
+    {
+      "id": "222",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "10",
+      "range": "47"
+    },
+    {
+      "id": "223",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "66",
+      "range": "96",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "224",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "66",
+      "range": "12",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1243.14,
+        937.51
+      ]
+    },
+    {
+      "id": "225",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "65",
+      "range": "42"
+    },
+    {
+      "id": "31",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasSpiciness",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasSpiciness"
+      },
+      "attributes": [
+        "functional",
+        "object"
+      ],
+      "domain": "82",
+      "range": "26",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        404.57,
+        -552.67
+      ]
+    },
+    {
+      "id": "226",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "87"
+    },
+    {
+      "id": "227",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "9",
+      "range": "90"
+    },
+    {
+      "id": "228",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "23",
+      "range": "56",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "229",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "23",
+      "range": "87",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        881.47,
+        196.52
+      ]
+    },
+    {
+      "id": "230",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "23",
+      "range": "8",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "231",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "23",
+      "range": "22",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "232",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "69",
+      "range": "52",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "233",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "69",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1032.03,
+        570.66
+      ]
+    },
+    {
+      "id": "234",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "69",
+      "range": "12",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1207.31,
+        996.86
+      ]
+    },
+    {
+      "id": "235",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "69",
+      "range": "40",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1167.75,
+        1010.44
+      ]
+    },
+    {
+      "id": "236",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "40",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1351.84,
+        852.16
+      ]
+    },
+    {
+      "id": "237",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "54",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1254.42,
+        401.9
+      ]
+    },
+    {
+      "id": "238",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "121",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1325.81,
+        354.94
+      ]
+    },
+    {
+      "id": "239",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasTexture",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasTexture"
+      },
+      "attributes": [
+        "functional",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "90",
+      "superproperty": [
+        "28"
+      ],
+      "pos": [
+        1217.7,
+        410.73
+      ]
+    },
+    {
+      "id": "240",
+      "label": "Disjoint With",
+      "attributes": [
+        "anonymous",
+        "object"
+      ],
+      "domain": "108",
+      "range": "48"
+    },
+    {
+      "id": "241",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "52",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33"
+    },
+    {
+      "id": "242",
+      "iri": "http://www.bulgAIrian-cuisine.com#hasIngredient",
+      "baseIri": "http://www.bulgAIrian-cuisine.com",
+      "label": {
+        "IRI-based": "hasIngredient"
+      },
+      "attributes": [
+        "transitive",
+        "object",
+        "someValues"
+      ],
+      "domain": "75",
+      "range": "12",
+      "superproperty": [
+        "28"
+      ],
+      "inverse": "33",
+      "pos": [
+        1391.99,
+        839.31
+      ]
+    },
+    {
+      "id": "GENERATED-INTERSECTION-3-4-0",
+      "domain": "3",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-36-4-0",
+      "domain": "36",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-44-4-0",
+      "domain": "44",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-80-4-0",
+      "domain": "80",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-UNION-10-87-0",
+      "domain": "10",
+      "range": "87",
+      "pos": [
+        797.76,
+        -195.17
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-10-9-1",
+      "domain": "10",
+      "range": "9",
+      "pos": [
+        410.42,
+        146.48
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-10-90-2",
+      "domain": "10",
+      "range": "90",
+      "pos": [
+        828.86,
+        9.43
+      ]
+    },
+    {
+      "id": "GENERATED-INTERSECTION-139-4-0",
+      "domain": "139",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-INTERSECTION-150-4-0",
+      "domain": "150",
+      "range": "4"
+    },
+    {
+      "id": "GENERATED-UNION-26-27-0",
+      "domain": "26",
+      "range": "27",
+      "pos": [
+        823.03,
+        -727.9
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-26-25-1",
+      "domain": "26",
+      "range": "25",
+      "pos": [
+        641.21,
+        -1030.92
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-47-63-0",
+      "domain": "47",
+      "range": "63",
+      "pos": [
+        -433.18,
+        -767.17
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-47-101-1",
+      "domain": "47",
+      "range": "101",
+      "pos": [
+        -521.73,
+        -602.9
+      ]
+    }
+  ]
+}

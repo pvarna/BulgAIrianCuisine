@@ -1,0 +1,1978 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/pvarna/ontologies/2025/0/bulgAIrian-cuisine/"
+     xml:base="http://www.semanticweb.org/pvarna/ontologies/2025/0/bulgAIrian-cuisine/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.bulgAIrian-cuisine.com#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.bulgAIrian-cuisine.com">
+        <rdfs:comment>Bulgarian cuisine ontology that describes various Bulgarian dishes based on their ingredients</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasCookingMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasCookingMethod">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#Dish"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.bulgAIrian-cuisine.com#isIngredientOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasRegion -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasRegion">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasSpiciness -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasSpiciness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Spiciness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasSweetness -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasSweetness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Sweetness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasTexture -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasTexture">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#Dish"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Texture"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.bulgAIrian-cuisine.com#isIngredientOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+        <rdfs:range rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasCaloricContentValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasCaloricContentValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#hasPreparationTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bulgAIrian-cuisine.com#hasPreparationTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#isTraditional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.bulgAIrian-cuisine.com#isTraditional">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Banitsa -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Banitsa">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#EggIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#YogurtIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#EggIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#YogurtIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#BeanIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#BeanIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#LeanIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#BeefIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#BeefIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#BobChorba -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#BobChorba">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#BeanIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#CarrotIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Liquid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#BeanIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#CarrotIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Boiling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#DobrudjaRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ButterIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ButterIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DairyIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#CarrotIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#CarrotIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#CheeseIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#CheeseIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DairyIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ChickenIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ChickenIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ChocolateBanitsa -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ChocolateBanitsa">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ChocolateIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ChocolateIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ChocolateIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ChocolateIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#VerySweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#CookingMethod -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#CookingMethod">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Baking"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Boiling"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Frying"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Grilling"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#NoCooking"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Crunchy -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Crunchy">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#CucumberIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#CucumberIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#DairyIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#DairyIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Dish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Dish">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCaloricContentValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasPreparationTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#isTraditional"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#DishIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#DomainThing -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#DomainThing">
+        <owl:disjointWith rdf:resource="http://www.bulgAIrian-cuisine.com#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#EggIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#EggIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#EggplantIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#EggplantIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#FiloDoughIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#FishChorba -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#FishChorba">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#CarrotIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#FishIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Liquid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#CarrotIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#FishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Boiling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#BlackSeaCoastRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#FishIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#FishIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Food -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Food">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#FruitIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#FruitIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#LeanIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#GarlicIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#GarlicIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#VerySpicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Gyuvech -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Gyuvech">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#EggplantIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#EggplantIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#ThracianRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#HighCalorieDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#HighCalorieDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCaloricContentValue"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Kapama -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Kapama">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ChickenIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#RiceIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#SauerkrautIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ChickenIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#RiceIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#SauerkrautIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Boiling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#PirinRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Kavarma -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Kavarma">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#YellowCheeseIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#YellowCheeseIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Boiling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#ThracianRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#LambIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#LambIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#LeanDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#LeanDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#LeanIngredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#LeanIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#LeanIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Liquid -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Liquid">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Lyutenitsa -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Lyutenitsa">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#EggplantIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#EggplantIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Boiling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#MeatIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#MeatIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#MildSpicy -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#MildSpicy">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Spiciness"/>
+        <owl:disjointWith rdf:resource="http://www.bulgAIrian-cuisine.com#VerySpicy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#MildSweet -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#MildSweet">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Sweetness"/>
+        <owl:disjointWith rdf:resource="http://www.bulgAIrian-cuisine.com#VerySweet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#NamedDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#NamedDish">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#NoCookableDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#NoCookableDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                        <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#NoCooking"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#OnionIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSpiciness"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#MildSpicy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Patatnik -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Patatnik">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PotatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PotatoIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#RhodopeRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#PepperIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#PorkIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#PorkIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#MeatIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#PotatoIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#PotatoIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#PumpkinIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#PumpkinIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#FruitIngredient"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSweetness"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#MildSweet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Region -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Region">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#BalkanRegion"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#BlackSeaCoastRegion"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DobrudjaRegion"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PirinRegion"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#RhodopeRegion"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ThracianRegion"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DomainThing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#RegionalDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#RegionalDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                        <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#RiceIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#RiceIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#LeanIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#SauerkrautIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#SauerkrautIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ShopskaSalad -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ShopskaSalad">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#CucumberIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#CucumberIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#NoCooking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#PirinRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Soft -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Soft">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Texture"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Spiciness -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Spiciness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#MildSpicy"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#VerySpicy"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#SpicyDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#SpicyDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSpiciness"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#VerySpicy"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#StuffedPeppersWithBeans -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#StuffedPeppersWithBeans">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#BeanIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Soft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#BeanIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PepperIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#RhodopeRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#SvinskoKufte -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#SvinskoKufte">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PorkIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Grilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#SweetDish -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#SweetDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasSweetness"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#VerySweet"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Sweetness -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Sweetness">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#MildSweet"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#VerySweet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Tarator -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Tarator">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#CucumberIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#GarlicIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#YogurtIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Liquid"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#CucumberIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#GarlicIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#YogurtIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#NoCooking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#TeleshkoKebapche -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#TeleshkoKebapche">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#BeefIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#BeefIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#OnionIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Grilling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Texture -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Texture">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Liquid"/>
+                    <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Soft"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Tikvenik -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#Tikvenik">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#NamedDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#ButterIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#PumpkinIngredient"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasTexture"/>
+                <owl:someValuesFrom rdf:resource="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasIngredient"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#DishIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#FiloDoughIngredient"/>
+                            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#PumpkinIngredient"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasCookingMethod"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#Baking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bulgAIrian-cuisine.com#hasRegion"/>
+                <owl:hasValue rdf:resource="http://www.bulgAIrian-cuisine.com#RhodopeRegion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#TomatoIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#TomatoIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#VegetableIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#ValuePartition"/>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#VegetableIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#VegetableIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#LeanIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#VerySpicy -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#VerySpicy">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#VerySweet -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#VerySweet">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#Sweetness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#WhiteCheeseIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#CheeseIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#YellowCheeseIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#YellowCheeseIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#CheeseIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#YogurtIngredient -->
+
+    <owl:Class rdf:about="http://www.bulgAIrian-cuisine.com#YogurtIngredient">
+        <rdfs:subClassOf rdf:resource="http://www.bulgAIrian-cuisine.com#DairyIngredient"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Baking -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Baking">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#BalkanRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#BalkanRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#BlackSeaCoastRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#BlackSeaCoastRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Boiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Boiling">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#DobrudjaRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#DobrudjaRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Banitsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Banitsa">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Banitsa"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">350</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-BobChorba -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-BobChorba">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#BobChorba"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-ChocolateBanitsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-ChocolateBanitsa">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#ChocolateBanitsa"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-FishChorba -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-FishChorba">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#FishChorba"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Gyuvech -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Gyuvech">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Gyuvech"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Kapama -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Kapama">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Kapama"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Kavarma -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Kavarma">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Kavarma"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">90</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Lyutenitsa -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Lyutenitsa">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Lyutenitsa"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Patatnik -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Patatnik">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Patatnik"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-ShopskaSalad -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-ShopskaSalad">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#ShopskaSalad"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-StuffedPeppersWithBeans -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-StuffedPeppersWithBeans">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#StuffedPeppersWithBeans"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-SvinskoKufte -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-SvinskoKufte">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#SvinskoKufte"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Tarator -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Tarator">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Tarator"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-TeleshkoKebapche -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-TeleshkoKebapche">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#TeleshkoKebapche"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">320</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Example-Tikvenik -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Example-Tikvenik">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Tikvenik"/>
+        <www:hasCaloricContentValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</www:hasCaloricContentValue>
+        <www:hasPreparationTime rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</www:hasPreparationTime>
+        <www:isTraditional rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</www:isTraditional>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Frying -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Frying">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#Grilling -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#Grilling">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#NoCooking -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#NoCooking">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#CookingMethod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#PirinRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#PirinRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#RhodopeRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#RhodopeRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.bulgAIrian-cuisine.com#ThracianRegion -->
+
+    <owl:NamedIndividual rdf:about="http://www.bulgAIrian-cuisine.com#ThracianRegion">
+        <rdf:type rdf:resource="http://www.bulgAIrian-cuisine.com#Region"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Banitsa"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Kavarma"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#ShopskaSalad"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#StuffedPeppersWithBeans"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Tarator"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Tikvenik"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Crunchy"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Liquid"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Soft"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Spiciness"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Sweetness"/>
+            <rdf:Description rdf:about="http://www.bulgAIrian-cuisine.com#Texture"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
